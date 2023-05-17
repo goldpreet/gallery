@@ -1,0 +1,169 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --colorblue: rgb(97, 97, 228);
+  --colorline: blue;
+  --colorYellow: rgb(172, 172, 87);
+  --colorbg: #111828;
+}
+
+body {
+  background-color: var(--colorbg);
+  color: white;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  align-items: centre;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+#hamburger {
+  /* height: 60px; */
+  width: 35px;
+  /* display: none; */
+
+  opacity: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 10px 8px;
+  gap: 9px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li button {
+  background-color: var(--colorblue);
+  border-radius: 7px;
+  padding: 4px 7px;
+  color: white;
+}
+/* header section */
+
+#hand {
+  /* height: 50px; */
+  width: 30px;
+}
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.left-header p {
+  color: var(--colorYellow);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* gallery */
+
+#header-title {
+  text-align: center;
+  /* margin: 20px 0px; */
+  margin-top: 34px;
+  position: relative;
+ 
+}
+
+.line{
+    height: 10px;
+    width: 130px;
+    background-color: var(--colorline);
+}
+.contact-line{
+    width: 165px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+
+
+/* #header-title::after{
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 5px;
+    background-color: var(--colorline);
+    bottom: 0;
+    left: 47%;
+} */
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 40px;
+}
+
+
+@media(max-width:600px)
+{
+    #hamburger 
+    {
+        opacity: 1;
+    }
+    .navbar ul
+    {
+        opacity: 0;
+    }
+    #pc-img{
+        height:270px;
+    }
+}
+
